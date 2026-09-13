@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CED2C0B-AE08-4E89-AE08-E0D7DC41C07F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BikeShop</RootNamespace>
+    <AssemblyName>BikeShop</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationHelper.cs" />
+    <Compile Include="BikeManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BikeManage.Designer.cs">
+      <DependentUpon>BikeManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerRegistration.Designer.cs">
+      <DependentUpon>CustomerRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeData.Designer.cs">
+      <DependentUpon>EmployeeData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeSalary.Designer.cs">
+      <DependentUpon>EmployeeSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M2AccpetOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M2AccpetOrder.Designer.cs">
+      <DependentUpon>M2AccpetOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M2ManageCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M2ManageCustomer.Designer.cs">
+      <DependentUpon>M2ManageCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M2PlaceOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M2PlaceOrder.Designer.cs">
+      <DependentUpon>M2PlaceOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M2Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M2Dashboard.Designer.cs">
+      <DependentUpon>M2Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M2SalesHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M2SalesHistory.Designer.cs">
+      <DependentUpon>M2SalesHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M3Bikeview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M3Bikeview.Designer.cs">
+      <DependentUpon>M3Bikeview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M3customerpanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M3customerpanel.Designer.cs">
+      <DependentUpon>M3customerpanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficialsLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficialsLogin.Designer.cs">
+      <DependentUpon>OfficialsLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderHistory.Designer.cs">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreviousBuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreviousBuy.Designer.cs">
+      <DependentUpon>PreviousBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BikeManage.resx">
+      <DependentUpon>BikeManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerRegistration.resx">
+      <DependentUpon>CustomerRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeData.resx">
+      <DependentUpon>EmployeeData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeSalary.resx">
+      <DependentUpon>EmployeeSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M2AccpetOrder.resx">
+      <DependentUpon>M2AccpetOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M2ManageCustomer.resx">
+      <DependentUpon>M2ManageCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M2PlaceOrder.resx">
+      <DependentUpon>M2PlaceOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M2Dashboard.resx">
+      <DependentUpon>M2Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M2SalesHistory.resx">
+      <DependentUpon>M2SalesHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M3Bikeview.resx">
+      <DependentUpon>M3Bikeview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M3customerpanel.resx">
+      <DependentUpon>M3customerpanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficialsLogin.resx">
+      <DependentUpon>OfficialsLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderHistory.resx">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreviousBuy.resx">
+      <DependentUpon>PreviousBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
