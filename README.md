@@ -1,8 +1,6 @@
 # c-sharp-bikesop-project
 
-এখানে আপনার **Bike Shop Management System** প্রজেক্টের জন্য একটি সম্পূর্ণ, প্রফেশনাল এবং সুন্দরভাবে সাজানো **GitHub `README.md**` ফাইল দেওয়া হলো। এটি সরাসরি কপি করে আপনার গিটহাব রিপোজিটরির `README.md` ফাইলে পেস্ট করে দিতে পারেন।
 
----
 
 # 🚴‍♂️ Bike Shop Management System
 
